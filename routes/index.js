@@ -5,11 +5,9 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
 
   // Send Response
-  responseData = {
+  const responseData = {
     success: 1,
-    data: {
-      temp: "val"
-    }
+    message: "Get Request Recieved"
   }
   res.json(responseData);
 });
